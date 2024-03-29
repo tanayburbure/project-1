@@ -1,0 +1,133 @@
+@font-face {
+    font-family: tanay;
+    src: url(Blackpast.ttf);
+}
+@font-face {
+    font-family: monoment;
+    src: url(Gilroy-Black.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(Gilroy-Light.ttf);
+}
+@font-face {
+    font-family: nava;
+    src: url(SpaceMono-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: light;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: rgb(24, 216, 110); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    
+}
+.gola{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 3px; */
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+#nav-part2 h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+#nav-part2 span{
+    color: rgba(0, 0, 255, 0.634);
+}
+#nav2{
+    height: 50px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding:0px 40px;
+}
+#nav2 h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: tanay;
+}
+#content{
+    height: calc(100% - 130px);
+    width: 100%;
+    /* background-color: bisque; */
+}
+#text-content{
+    height: 40%;
+    width: 100%;
+    background-color: rgba(128, 208, 182, 0.724);
+    display: flex;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 8px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: rgba(216, 62, 10, 0.857);
+    border-radius: 15px;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 75%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-family: tanay;
+    font-size: 100px;
+    font-weight: 300;
+}
+#image-content{
+    height: 59%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    align-items: first baseline;
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: top;
+}
